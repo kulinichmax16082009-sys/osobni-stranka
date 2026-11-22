@@ -1,0 +1,93 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #ffffff;
+  overflow-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#o-mne img {
+  max-width: 12rem;
+  height: 12rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5rem;
+  border: 1px solid #767676;
+  text-align: left;
+}
+
+a {
+  color: #0b4fb3;
+}
+
+:focus-visible {
+  outline: 0.1875rem solid #0b4fb3;
+  outline-offset: 0.125rem;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+  background: #000000;
+  color: #ffffff;
+  transform: translateY(-100%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+
+@media (min-width: 40em) {
+  /* TODO */
+}
+
+@media (min-width: 60em) {
+  /* TODO */
+}
+
+@media (min-width: 80em) {
+  /* TODO */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* TODO */
+  }
+}
+
+@media (prefers-contrast: more) {
+  /* TODO */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* TODO */
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  /* TODO */
+}
+
+@media (forced-colors: active) {
+  /* TODO */
+}
