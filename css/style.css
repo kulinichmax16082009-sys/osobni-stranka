@@ -13,15 +13,6 @@ html {
   color-scheme: light dark;
 }
 
-.card {
-  background-color: var(--barva-pozadi);
-  border: 1px solid var(--barva-ramecek);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
-}
-
 body {
   margin: 0;
   padding: 1rem;
@@ -36,11 +27,6 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
-
-#o-mne img {
-  max-width: 12rem;
-  height: 12rem;
 }
 
 table {
@@ -77,17 +63,99 @@ a {
   transform: translateY(0);
 }
 
+.site-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card {
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid var(--barva-ramecek);
+  border-radius: 0.5rem;
+  margin-block-end: 1rem;
+}
+
+#projekty article.card {
+  display: flex;
+  flex-direction: column;
+}
+
+#projekty article.card img {
+  width: 100%;
+}
+
+#projekty article.card p {
+  flex: 1;
+}
+
+main#obsah {
+  margin-inline: auto;
+}
+
+#projekty article.card p {
+  margin-top: auto;
+}
 
 @media (min-width: 40em) {
-  /* TODO */
+  .site-header nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  body {
+    padding: 1.5rem;
+  }
 }
 
 @media (min-width: 60em) {
-  /* TODO */
+  #o-mne {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  #o-mne h2 {
+    flex-basis: 100%;
+  }
+
+  #projekty {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  #projekty h2 {
+    grid-column: 1 / -1;
+  }
+
+  main#obsah {
+    max-width: 60rem;
+  }
+
+  body {
+    padding: 2rem;
+  }
 }
 
 @media (min-width: 80em) {
-  /* TODO */
+  #projekty {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main#obsah {
+    max-width: 75rem;
+  }
+
+  body {
+    padding: 3rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
