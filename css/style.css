@@ -263,3 +263,15 @@ main#obsah {
     border: 2px solid ButtonText;
   }
 }
+
+@media (prefers-contrast: more) and (prefers-color-scheme: dark) {
+  :root {
+    --barva-pozadi: #000000;
+    --barva-textu: #ffffff;
+    --barva-odkaz: #9ec5ff;
+    --barva-ramecek: #ffffff;
+    --barva-skip-pozadi: #ffffff;
+    --barva-skip-text: #000000;
+    --barva-vypln: #0d1417;
+  }
+}
