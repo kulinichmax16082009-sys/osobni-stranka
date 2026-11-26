@@ -9,6 +9,7 @@ html {
   --barva-ramecek: #767676;
   --barva-skip-pozadi: #000000;
   --barva-skip-text: #ffffff;
+  --barva-vypln: #f0f5f7;
 
   color-scheme: light dark;
 }
@@ -38,6 +39,7 @@ th, td {
   padding: 0.5rem;
   border: 1px solid var(--barva-ramecek);
   text-align: left;
+  background: var(--barva-vypln);
 }
 
 a {
@@ -78,6 +80,7 @@ a {
   border: 1px solid var(--barva-ramecek);
   border-radius: 0.5rem;
   margin-block-end: 1rem;
+  background: var(--barva-vypln);
 }
 
 #projekty article.card {
@@ -166,12 +169,40 @@ main#obsah {
     --barva-ramecek: #8a8a8a;
     --barva-skip-pozadi: #ffffff;
     --barva-skip-text: #000000;
+    --barva-vypln: #1d2528;
   }
 }
 
 @media (prefers-contrast: more) {
-  /* TODO */
+  :root {
+    --barva-pozadi: #ffffff;
+    --barva-textu: #000000;
+    --barva-odkaz: #0000cc; 
+    --barva-ramecek: #000000;
+    --barva-skip-pozadi: #000000;
+    --barva-skip-text: #ffffff;
+    --barva-vypln: #f3f8fa;
+  }
+
+  *, *::before,*::after {
+    background-image: none;
+  }
+
+  th, td, .card {
+    border-width: 2px;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.125rem;
+    text-underline-offset: 0.2em;
+  }
+
+  :focus-visible {
+    outline-width: 0.25rem;
+  }
 }
+
 
 @media (prefers-reduced-motion: reduce) {
   /* TODO */
