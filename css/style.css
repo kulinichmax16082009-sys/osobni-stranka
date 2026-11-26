@@ -243,5 +243,23 @@ main#obsah {
 }
 
 @media (forced-colors: active) {
-  /* TODO */
+  .card, th, td {
+    border: 2px solid CanvasText;
+  }
+
+  a {
+    color: LinkText;
+    text-decoration: underline;
+  }
+
+  :focus-visible {
+    outline: 0.25rem solid Highlight;
+    outline-offset: 0.125rem;
+  }
+
+  .skip-link {
+    background: ButtonFace;
+    color: ButtonText;
+    border: 2px solid ButtonText;
+  }
 }
