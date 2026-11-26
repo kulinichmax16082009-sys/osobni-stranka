@@ -21,11 +21,11 @@ a u každého hash commitu, který ho opravil (najdete ho v `git log --oneline`)
 
 | Nastavení | Co jsem při emulaci viděl | V pořádku |
 | --- | --- | --- |
-| prefers-color-scheme: dark | TODO | TODO |
-| prefers-contrast: more | TODO | TODO |
-| prefers-reduced-motion: reduce | TODO | TODO |
-| prefers-reduced-transparency: reduce | TODO | TODO |
-| forced-colors: active | TODO | TODO |
+| prefers-color-scheme: dark | Tmavé pozadí `#121212`, světlý text, světle modré odkazy, karty a tabulka tmavě azurové | Ano |
+| prefers-contrast: more | Čistě bílé pozadí, černý text, 2px okraje, odkazy podtržené, kontrast textu 21 | Ano |
+| prefers-reduced-motion: reduce | Karta se při najetí nezvedne, odkazy mění barvu okamžitě, rolování na kotvu skočí hned | Ano |
+| prefers-reduced-transparency: reduce | Karty mají plnou barvu, rozostření pozadí zmizelo | Ano |
+| forced-colors: active | Systémové barvy, okraje karet a tabulky i obrys fokusu jsou vidět, stín zmizel | Ano |
 
 ## Kritéria WCAG 2.2 úrovně A a AA
 
