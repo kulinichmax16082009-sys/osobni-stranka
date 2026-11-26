@@ -89,6 +89,8 @@ a:hover {
   margin-block-end: 1rem;
   background: var(--barva-vypln);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: color-mix(in srgb, var(--barva-vypln) 50%, transparent);
+  backdrop-filter: blur(0.5rem);
 }
 
 .card:hover {
@@ -234,7 +236,10 @@ main#obsah {
 }
 
 @media (prefers-reduced-transparency: reduce) {
-  /* TODO */
+    .card, th, td {
+    background-color: var(--barva-vypln);
+    backdrop-filter: none;
+  }
 }
 
 @media (forced-colors: active) {
