@@ -6,7 +6,11 @@ html {
 :root {
   --barva-pozadi: #ffffff;
   --barva-textu: #1a1a1a;
+<<<<<<< HEAD
   --barva-odkaz: #7a1fa2;
+=======
+  --barva-odkaz: #00ffaa;
+>>>>>>> feature/barvy-b
   --barva-ramecek: #767676;
   --barva-skip-pozadi: #000000;
   --barva-skip-text: #ffffff;
