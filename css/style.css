@@ -1,5 +1,6 @@
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -44,6 +45,12 @@ th, td {
 
 a {
   color: var(--barva-odkaz);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+a:hover {
+  background-color: var(--barva-vypln);
+  text-decoration-thickness: 0.15em;
 }
 
 :focus-visible {
@@ -81,6 +88,12 @@ a {
   border-radius: 0.5rem;
   margin-block-end: 1rem;
   background: var(--barva-vypln);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 208, 255, 0.2);
 }
 
 #projekty article.card {
@@ -205,7 +218,19 @@ main#obsah {
 
 
 @media (prefers-reduced-motion: reduce) {
-  /* TODO */
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  .card:hover {
+    transform: none;
+  }
 }
 
 @media (prefers-reduced-transparency: reduce) {
