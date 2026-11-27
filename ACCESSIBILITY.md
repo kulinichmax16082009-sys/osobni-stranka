@@ -7,9 +7,9 @@ a u každého hash commitu, který ho opravil (najdete ho v `git log --oneline`)
 
 | Nástroj | Před opravami | Po opravách |
 | --- | --- | --- |
-| Lighthouse (Accessibility) | TODO | TODO |
-| WAVE (Errors a Contrast Errors) | TODO | TODO |
-| Test klávesnicí | TODO | TODO |
+| Lighthouse (Accessibility) | Nebyla nalezena žádná chyba (100%) | Není potřeba opravovat |
+| WAVE (Errors a Contrast Errors) | 0 errors, 0 contrast errors, 0 alerts | Není potřeba opravovat |
+| Test klávesnicí | Všechno je v pořádku a web lze volně projít klávesnicí | Není potřeba opravovat |
 
 ## Nalezené problémy a jejich opravy
 
