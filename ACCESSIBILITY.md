@@ -17,6 +17,7 @@ a u každého hash commitu, který ho opravil (najdete ho v `git log --oneline`)
 | --- | --- | --- | --- |
 | Neplatná cesta v `src` u obrázku, v názvu souboru je mezera (Hláška chyby v html validátoru) | Použíl jsem na to https://validator.w3.org/ | `ed82efd` | 4.1.1 Parsing |
 | Neplatný rozměr textu v px | při čtení kriterií WCAG (Ovladatelnost) | `b15218c` | 2.5.8 |
+| Neplatný format fotografii Maksyma Kulynyche | Podíval jsem se na fotografii | 7fe7b6f | --- |
 
 ## Test media rules 
 
@@ -91,7 +92,7 @@ Kritéria označená „nové“ přibyla ve verzi 2.2.
 | 2.5.3 | Label in Name | A | Splněno | Přístupný název odkazů je jejich viditelný text, nepoužívám `aria-label`. |
 | 2.5.4 | Motion Actuation | A | Nevztahuje se | Stránka se neovládá pohybem zařízení. |
 | 2.5.7 | Dragging Movements (nové) | AA | Nevztahuje se | Na stránce není žádné tažení. |
-| 2.5.8 | Target Size (Minimum) (nové) | AA | Nesplněno | Odkazy v navigaci mají mezi sebou odstupy (`gap`), čímž splňují výjimku pro rozestupy; e-mail je odkaz uvnitř věty; Rozměr musí být minimálně 24px, což není |
+| 2.5.8 | Target Size (Minimum) (nové) | AA | Splněno | Odkazy v navigaci mají mezi sebou odstupy (`gap`), čímž splňují výjimku pro rozestupy; e-mail je odkaz uvnitř věty; Rozměr textu je 24px |
 
 ### 3 Understandable (srozumitelnost)
 
