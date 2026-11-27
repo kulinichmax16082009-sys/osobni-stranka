@@ -7,17 +7,17 @@ a u každého hash commitu, který ho opravil (najdete ho v `git log --oneline`)
 
 | Nástroj | Před opravami | Po opravách |
 | --- | --- | --- |
-| Lighthouse (Accessibility) | TODO | TODO |
-| WAVE (Errors a Contrast Errors) | TODO | TODO |
-| Test klávesnicí | TODO | TODO |
+| Lighthouse (Accessibility) | Nebyla nalezena žádná chyba (100%) | Není potřeba opravovat |
+| WAVE (Errors a Contrast Errors) | 0 errors, 0 contrast errors, 0 alerts | Není potřeba opravovat |
+| Test klávesnicí | Všechno je v pořádku a web lze volně projít klávesnicí | Není potřeba opravovat |
 
 ## Nalezené problémy a jejich opravy
 
 | Problém | Jak jsem ho našel | Oprava (commit) | Kritérium WCAG |
 | --- | --- | --- | --- |
-| Například: odkaz „Více“ bez popisu | WAVE | `a1b2c3d` | 2.4.4 |
+| Neplatná cesta v `src` u obrázku, v názvu souboru je mezera (Hláška chyby v html validátoru) | Použíl jsem na to https://validator.w3.org/ | `ed82efd` | 4.1.1 Parsing |
 
-## Test media rules
+## Test media rules 
 
 | Nastavení | Co jsem při emulaci viděl | V pořádku |
 | --- | --- | --- |
