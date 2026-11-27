@@ -17,7 +17,7 @@ a u každého hash commitu, který ho opravil (najdete ho v `git log --oneline`)
 | --- | --- | --- | --- |
 | Neplatná cesta v `src` u obrázku, v názvu souboru je mezera (Hláška chyby v html validátoru) | Použíl jsem na to https://validator.w3.org/ | `ed82efd` | 4.1.1 Parsing |
 | Neplatný rozměr textu v px | při čtení kriterií WCAG (Ovladatelnost) | `b15218c` | 2.5.8 |
-| Neplatný format fotografii Maksyma Kulynyche | Podíval jsem se na fotografii | 7fe7b6f | --- |
+| Neplatný format fotografii Maksyma Kulynyche | Podíval jsem se na fotografii | `7fe7b6f` | --- |
 
 ## Test media rules 
 
