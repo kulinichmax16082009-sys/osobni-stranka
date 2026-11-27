@@ -15,9 +15,9 @@ a u každého hash commitu, který ho opravil (najdete ho v `git log --oneline`)
 
 | Problém | Jak jsem ho našel | Oprava (commit) | Kritérium WCAG |
 | --- | --- | --- | --- |
-| Například: odkaz „Více“ bez popisu | WAVE | `a1b2c3d` | 2.4.4 |
+| Neplatná cesta v `src` u obrázku, v názvu souboru je mezera (Hláška chyby v html validátoru) | Použíl jsem na to https://validator.w3.org/ | `ed82efd` | 4.1.1 Parsing |
 
-## Test media rules
+## Test media rules 
 
 | Nastavení | Co jsem při emulaci viděl | V pořádku |
 | --- | --- | --- |
