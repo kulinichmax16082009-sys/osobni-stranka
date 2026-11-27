@@ -16,7 +16,7 @@ a u každého hash commitu, který ho opravil (najdete ho v `git log --oneline`)
 | Problém | Jak jsem ho našel | Oprava (commit) | Kritérium WCAG |
 | --- | --- | --- | --- |
 | Neplatná cesta v `src` u obrázku, v názvu souboru je mezera (Hláška chyby v html validátoru) | Použíl jsem na to https://validator.w3.org/ | `ed82efd` | 4.1.1 Parsing |
-| Neplatný rozměr textu v px | při čtení kriterií WCAG (Ovladatelnost) | --- | 2.5.8 |
+| Neplatný rozměr textu v px | při čtení kriterií WCAG (Ovladatelnost) | `b15218c` | 2.5.8 |
 
 ## Test media rules 
 
